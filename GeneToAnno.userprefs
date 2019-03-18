@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="GeneToAnno/GeneToAnno.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GeneToAnno/RegionStructures/Region.cs">
+    <Files>
+      <File FileName="GeneToAnno/WindowMain.cs" Line="1" Column="1" />
+      <File FileName="GeneToAnno/Processing/StatsTester.cs" Line="1" Column="1" />
+      <File FileName="GeneToAnno/StatsOutputWindow.cs" Line="1" Column="1" />
+      <File FileName="GeneToAnno/RegionStructures/Element.cs" Line="661" Column="4" />
+      <File FileName="GeneToAnno/Processing/RegionChangeMap.cs" Line="186" Column="5" />
+      <File FileName="GeneToAnno/Processing/RankSplit.cs" Line="1" Column="1" />
+      <File FileName="GeneToAnno/Management/MainData.cs" Line="153" Column="1" />
+      <File FileName="GeneToAnno/GUI Control/ImgDisplay.cs" Line="1" Column="1" />
+      <File FileName="GeneToAnno/Genome.cs" Line="226" Column="40" />
+      <File FileName="GeneToAnno/RegionStructures/Scaffold.cs" Line="76" Column="3" />
+      <File FileName="GeneToAnno/RegionStructures/Region.cs" Line="381" Column="62" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/arunachala/Documents/AZO_Methylation/App/GeneToAnno/GeneToAnno/Management/MainData.cs" line="1072" column="1" />
+      <Breakpoint file="/home/arunachala/Documents/AZO_Methylation/App/GeneToAnno/GeneToAnno/Management/MainData.cs" line="1103" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
