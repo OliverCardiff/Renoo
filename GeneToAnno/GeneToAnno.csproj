@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{586A7751-9C5F-4B98-B51B-E00C16B34BAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GeneToAnno</RootNamespace>
+    <AssemblyName>GeneToAnno</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glib-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glade-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="Bio.Core">
+      <HintPath>..\packages\NETBioCore.PCL.2.0.141118\lib\net45\Bio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Bio.Platform.Helpers">
+      <HintPath>..\packages\NETBioCore.PCL.2.0.141118\lib\net45\Bio.Platform.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="RDotNet">
+      <HintPath>..\packages\R.NET.1.5.5\lib\net40\RDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="RDotNet.NativeLibrary">
+      <HintPath>..\packages\R.NET.1.5.5\lib\net40\RDotNet.NativeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.2014.1.546\lib\portable-net4+sl4+wp71+win8\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.GtkSharp">
+      <HintPath>..\packages\OxyPlot.GtkSharp.2014.1.546\lib\net40\OxyPlot.GtkSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\packages\MathNet.Numerics.3.6.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.DocumentObjectModel">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\MigraDoc.RtfRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI.1.32.4334.0\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="OxyPlot.Pdf">
+      <HintPath>..\packages\OxyPlot.Pdf.2014.1.546\lib\net45\OxyPlot.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Meta.Numerics">
+      <HintPath>..\packages\Meta.Numerics.3.0.0\lib\Meta.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-dotnet, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-dotnet-2.0</Package>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionStructures\Element.cs" />
+    <Compile Include="RegionStructures\Gene.cs" />
+    <Compile Include="RegionStructures\Region.cs" />
+    <Compile Include="RegionStructures\GeneStructures\Exon.cs" />
+    <Compile Include="RegionStructures\GeneStructures\Intron.cs" />
+    <Compile Include="RegionStructures\GeneStructures\Flank3.cs" />
+    <Compile Include="Genome.cs" />
+    <Compile Include="RegionStructures\GeneElement.cs" />
+    <Compile Include="RegionStructures\GeneStructures\UTR3.cs" />
+    <Compile Include="RegionStructures\GeneStructures\UTR5.cs" />
+    <Compile Include="RegionStructures\GeneStructures\CDS.cs" />
+    <Compile Include="Management\MainData.cs" />
+    <Compile Include="Management\ProgramState.cs" />
+    <Compile Include="RegionStructures\GeneStructures\MiscGeneElement.cs" />
+    <Compile Include="Management\Settings.cs" />
+    <Compile Include="GUI Control\LoaderSettings.cs" />
+    <Compile Include="gtk-gui\GeneToAnno.LoaderSettings.cs" />
+    <Compile Include="GUI Control\SettingBinder.cs" />
+    <Compile Include="WindowMain.cs" />
+    <Compile Include="gtk-gui\GeneToAnno.WindowMain.cs" />
+    <Compile Include="SavePdfWindow.cs" />
+    <Compile Include="gtk-gui\GeneToAnno.SavePdfWindow.cs" />
+    <Compile Include="gtk-gui\GeneToAnno.MainWindow.cs" />
+    <Compile Include="GraphWindowPair.cs" />
+    <Compile Include="RegionStructures\Scaffold.cs" />
+    <Compile Include="RegionStructures\SeqRead.cs" />
+    <Compile Include="RegionStructures\GeneStructures\Promoter.cs" />
+    <Compile Include="Processing\ProcessingClass.cs" />
+    <Compile Include="Management\ElementTypeDictionary.cs" />
+    <Compile Include="SetEleDictWindow.cs" />
+    <Compile Include="gtk-gui\GeneToAnno.SetEleDictWindow.cs" />
+    <Compile Include="gtk-gui\GeneToAnno.SetElementTypeDictWindow.cs" />
+    <Compile Include="Processing\NextNearestMerge.cs" />
+    <Compile Include="Processing\BioSample.cs" />
+    <Compile Include="Processing\MainThreader.cs" />
+    <Compile Include="SampleAllocationWindow.cs" />
+    <Compile Include="gtk-gui\GeneToAnno.SampleAllocationWindow.cs" />
+    <Compile Include="Processing\Graphing\DoublesHisto.cs" />
+    <Compile Include="Processing\Graphing\GraphingClass.cs" />
+    <Compile Include="Processing\Graphing\MultiGraphingClass.cs" />
+    <Compile Include="Processing\Graphing\MultiHisto.cs" />
+    <Compile Include="Processing\Graphing\SpatialBayes.cs" />
+    <Compile Include="Processing\Graphing\MultiBayes.cs" />
+    <Compile Include="RegionStructures\Variant.cs" />
+    <Compile Include="RegionStructures\FKPM.cs" />
+    <Compile Include="Processing\RankSplit.cs" />
+    <Compile Include="Processing\RSplitContainer.cs" />
+    <Compile Include="GenomeRankSplitMethods.cs" />
+    <Compile Include="RegionStructures\BlastHit.cs" />
+    <Compile Include="Processing\Graphing\RankLine.cs" />
+    <Compile Include="Processing\Graphing\BayesPerBase.cs" />
+    <Compile Include="Processing\Graphing\MultiBayesPerBase.cs" />
+    <Compile Include="StatsOutputWindow.cs" />
+    <Compile Include="gtk-gui\GeneToAnno.StatsOutputWindow.cs" />
+    <Compile Include="Processing\StatsTester.cs" />
+    <Compile Include="Processing\RegionChangeMap.cs" />
+    <Compile Include="GUI Control\ImgDisplay.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RegionStructures\" />
+    <Folder Include="RegionStructures\GeneStructures\" />
+    <Folder Include="Processing\" />
+    <Folder Include="GUI Control\" />
+    <Folder Include="Management\" />
+    <Folder Include="Processing\Graphing\" />
+  </ItemGroup>
+</Project>
